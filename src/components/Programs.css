@@ -1,0 +1,8 @@
+.programs{padding:20px 12px}
+.program-grid{display:grid;grid-template-columns:1fr;gap:12px}
+.program-card{background:var(--card-bg);border-radius:10px;padding:14px;border:1px solid rgba(255,255,255,0.04);color:var(--brand-black)}
+.program-card h4{margin:0 0 6px}
+
+@media(min-width:800px){
+  .program-grid{grid-template-columns:repeat(3,1fr)}
+}

@@ -1,0 +1,83 @@
+.events-preview {
+  background-color: var(--gray-dark);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.event-card {
+  background-color: var(--brand-black);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  border-color: var(--brand-red);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.2);
+}
+
+.event-type {
+  display: inline-block;
+  background-color: var(--brand-red);
+  color: var(--brand-white);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--brand-white);
+}
+
+.event-date {
+  color: var(--brand-red);
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.event-card p {
+  color: var(--gray-light);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.event-link {
+  color: var(--brand-red);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.event-link:hover {
+  color: var(--brand-white);
+}
+
+.events-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
