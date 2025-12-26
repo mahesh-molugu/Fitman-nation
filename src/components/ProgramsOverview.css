@@ -84,11 +84,39 @@
 .program-cta {
   width: 100%;
   margin-top: auto;
+  align-self: center;
 }
 
-.programs-cta {
+.program-cta .btn {
+  display: inline-block;
+  width: auto;
+  padding: 12px 28px;
+}
+
+.programs-overview .programs-cta {
   text-align: center;
   margin-top: 50px;
+  background: transparent !important; /* override page-level background */
+  padding: 0;
+}
+
+/* Ensure the View All button only takes the width of its content and does not become full-width */
+.programs-overview .programs-cta .btn {
+  display: inline-block !important;
+  width: auto !important;
+  min-width: 0;
+  padding: 12px 28px;
+  background: var(--brand-red); /* ensure only the button has red background */
+  color: var(--brand-white);
+  border: none;
+}
+
+/* Keep the same behavior on smaller screens */
+@media (max-width: 768px) {
+  .programs-overview .programs-cta .btn {
+    display: inline-block !important;
+    width: auto !important;
+  }
 }
 
 @media (max-width: 768px) {

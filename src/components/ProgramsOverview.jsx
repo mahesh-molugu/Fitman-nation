@@ -42,14 +42,14 @@ export default function ProgramsOverview() {
                 ))}
               </ul>
               <div className="program-price">{program.price}</div>
-              <Link to="/programs" className="btn btn-red program-cta">
+              <Link to="/programs" className="btn btn-outline program-cta">
                 Enroll Now
               </Link>
             </div>
           ))}
         </div>
         <div className="programs-cta">
-          <Link to="/programs" className="btn btn-outline">
+          <Link to="/programs" className="btn btn-red">
             View All Programs
           </Link>
         </div>
