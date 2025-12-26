@@ -36,13 +36,13 @@ export default function Header() {
             Programs
           </Link>
           <Link to="/how-it-works" className={`nav-link ${isActive('/how-it-works') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
-            How It Works
+            How FitMan Nation Works
           </Link>
           <Link to="/events" className={`nav-link ${isActive('/events') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
             Events
           </Link>
           <Link to="/online-classes" className={`nav-link ${isActive('/online-classes') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
-            Classes
+            Online Classes
           </Link>
           <Link to="/success-stories" className={`nav-link ${isActive('/success-stories') ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}>
             Stories

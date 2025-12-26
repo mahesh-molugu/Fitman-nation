@@ -17,16 +17,16 @@ export default function About() {
           <h2 className="section-title">Our Story</h2>
           <div className="story-content">
             <p>
-              FitMan Nation was born from a simple belief: everyone deserves access to quality fitness 
-              guidance, regardless of their starting point, schedule, or physical limitations. We saw 
-              too many people struggling alone, following generic programs that didn't fit their lives 
-              or their bodies.
+              FitMan Nation was built with a simple belief — fitness should be practical, sustainable, 
+              and accessible to everyone. We focus on real-world transformation by combining structured 
+              workouts, lifestyle-friendly routines, and consistent accountability that fits into everyday 
+              life, not just the gym.
             </p>
             <p>
-              Our platform connects you with experienced mentors who understand that fitness isn't 
-              one-size-fits-all. Whether you're a busy professional, a parent juggling responsibilities, 
-              someone with mobility challenges, or an athlete seeking the next level, we create 
-              personalized plans that work for you.
+              Our mission is to empower individuals to take control of their health through disciplined 
+              training, smart nutrition, and a strong support system. Our vision is to build India's most 
+              trusted fitness community where transformation is not temporary, but a lifelong mindset 
+              supported by people, purpose, and progress.
             </p>
           </div>
         </div>
@@ -38,16 +38,15 @@ export default function About() {
             <div className="mv-card">
               <h3>Our Mission</h3>
               <p>
-                To empower individuals of all backgrounds and abilities to achieve their fitness goals 
-                through personalized mentorship, evidence-based training, and a supportive community 
-                that celebrates every step of the journey.
+                To empower individuals to take control of their health through disciplined training, 
+                smart nutrition, and a strong support system.
               </p>
             </div>
             <div className="mv-card">
               <h3>Our Vision</h3>
               <p>
-                To become the leading fitness platform where personalized coaching, community connection, 
-                and adaptive programming make health and wellness accessible to everyone, everywhere.
+                To build India's most trusted fitness community where transformation is not temporary, 
+                but a lifelong mindset supported by people, purpose, and progress.
               </p>
             </div>
           </div>
@@ -60,33 +59,28 @@ export default function About() {
           <div className="why-grid">
             <div className="why-card">
               <div className="why-icon">🎯</div>
-              <h3>Personalized Plans</h3>
-              <p>Every program is tailored to your goals, schedule, and fitness level.</p>
+              <h3>Personalized Training</h3>
+              <p>Structured workouts tailored to your goals, body type, and lifestyle.</p>
             </div>
             <div className="why-card">
-              <div className="why-icon">👥</div>
-              <h3>Expert Mentors</h3>
-              <p>Learn from certified trainers who guide and motivate you every step.</p>
+              <div className="why-icon">🧬</div>
+              <h3>Science-Backed Nutrition</h3>
+              <p>Evidence-based diet strategies that support your transformation goals.</p>
             </div>
             <div className="why-card">
-              <div className="why-icon">🏃</div>
-              <h3>Flexible Scheduling</h3>
-              <p>Work out on your time, whether at home, gym, or on the go.</p>
-            </div>
-            <div className="why-card">
-              <div className="why-icon">❤️</div>
-              <h3>Inclusive & Adaptive</h3>
-              <p>Programs designed for all abilities, including medical-safe options.</p>
+              <div className="why-icon">✅</div>
+              <h3>Accountability & Discipline</h3>
+              <p>Real human accountability to keep you consistent and motivated.</p>
             </div>
             <div className="why-card">
               <div className="why-icon">🤝</div>
-              <h3>Community Support</h3>
-              <p>Join events, challenges, and connect with like-minded individuals.</p>
+              <h3>Community & Support</h3>
+              <p>A powerful support system with like-minded individuals on the same journey.</p>
             </div>
             <div className="why-card">
-              <div className="why-icon">📊</div>
-              <h3>Track Progress</h3>
-              <p>Monitor your journey with tools and regular check-ins.</p>
+              <div className="why-icon">🌱</div>
+              <h3>Sustainable Lifestyle Approach</h3>
+              <p>Long-term transformation that fits into your everyday life, not just the gym.</p>
             </div>
           </div>
         </div>
@@ -94,7 +88,7 @@ export default function About() {
 
       <section className="team section">
         <div className="container">
-          <h2 className="section-title">Meet The Team</h2>
+          <h2 className="section-title">Meet Our Coaches & Mentors</h2>
           <p className="section-subtitle">
             Our mentors are certified professionals dedicated to your success.
           </p>

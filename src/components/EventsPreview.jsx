@@ -26,9 +26,9 @@ export default function EventsPreview() {
   return (
     <section className="events-preview section">
       <div className="container">
-        <h2 className="section-title">Upcoming Events</h2>
+        <h2 className="section-title">Upcoming Events & Community Activities</h2>
         <p className="section-subtitle">
-          Join our community events, challenges, and meetups. Connect, compete, and celebrate together.
+          Join our weekend runs, fitness challenges, yoga/zumba meetups, and community transformation events.
         </p>
         <div className="events-grid">
           {upcomingEvents.map((event, index) => (
@@ -37,8 +37,8 @@ export default function EventsPreview() {
               <h3>{event.title}</h3>
               <div className="event-date">{event.date}</div>
               <p>{event.description}</p>
-              <Link to="/events" className="event-link">
-                Learn More →
+              <Link to="/events" className="btn btn-outline event-link-btn">
+                View Details / Register
               </Link>
             </div>
           ))}

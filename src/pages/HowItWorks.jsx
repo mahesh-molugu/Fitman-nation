@@ -41,7 +41,7 @@ export default function HowItWorks() {
     },
     {
       number: '07',
-      title: 'Community Events',
+      title: 'Community Events & Challenges',
       description: 'Join runs, challenges, workshops, and meetups. Connect with the community and stay motivated together.',
       icon: '🎉'
     }
@@ -51,7 +51,7 @@ export default function HowItWorks() {
     <div className="how-it-works-page">
       <section className="how-hero section">
         <div className="container">
-          <h1 className="page-title">How It Works</h1>
+          <h1 className="page-title">How FitMan Nation Works</h1>
           <p className="page-subtitle">
             Your fitness journey with FitMan Nation is simple, structured, and supported every step of the way.
           </p>

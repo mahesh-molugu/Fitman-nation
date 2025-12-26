@@ -8,20 +8,20 @@ export default function WhatWeDo() {
   const services = [
     {
       icon: fitnessIcon,
-      title: 'Fitness',
-      description: 'Customized workout plans tailored to your goals, fitness level, and schedule. From beginner foundations to advanced training.',
+      title: 'Fitness & Training Programs',
+      description: 'Structured, science-based workouts designed to help you achieve your fitness goals with consistency and discipline.',
       link: '/programs'
     },
     {
       icon: nutritionIcon,
-      title: 'Diet & Nutrition',
-      description: 'Expert nutrition guidance to fuel your body right. Meal plans, recipes, and dietary strategies for optimal results.',
+      title: 'Diet & Nutrition Guidance',
+      description: 'Personalized diet strategies and practical nutrition guidance that fits your lifestyle and supports your transformation.',
       link: '/programs'
     },
     {
       icon: communityIcon,
-      title: 'Community',
-      description: 'Join events, challenges, and meetups. Connect with like-minded individuals on the same fitness journey.',
+      title: 'Community & Accountability',
+      description: 'A powerful support system with real human accountability to keep you motivated, consistent, and results-driven.',
       link: '/events'
     }
   ]
@@ -29,10 +29,12 @@ export default function WhatWeDo() {
   return (
     <section className="what-we-do section">
       <div className="container">
-        <h2 className="section-title">What We Do</h2>
+        <h2 className="section-title">What We Do at FitMan Nation</h2>
         <p className="section-subtitle">
-          We provide comprehensive fitness solutions that combine personalized training, 
-          expert mentorship, and a supportive community to help you achieve lasting results.
+          FitMan Nation helps individuals transform their bodies and lifestyles through structured fitness training, 
+          personalized diet strategies, and a powerful fitness community. We combine science-based workouts, 
+          practical nutrition guidance, and real human accountability to help people stay consistent, motivated, 
+          and results-driven.
         </p>
         <div className="services-grid">
           {services.map((service, index) => (

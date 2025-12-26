@@ -23,8 +23,9 @@ export default function Hero() {
             <span className="highlight">With Mentors.</span>
           </h1>
           <p className="hero-sub">
-            Personalized fitness plans, expert mentorship, and a supportive community. 
-            Built for every body, every schedule, and every goal.
+            FitMan Nation is a fitness-first community built to transform lives through structured training, 
+            smart nutrition, accountability, and a strong support ecosystem. We focus not just on physical 
+            transformation, but on building long-term discipline, confidence, and a sustainable healthy lifestyle.
           </p>
           <div className="hero-ctas">
             <Link to="/contact" className="btn btn-red" onClick={() => {

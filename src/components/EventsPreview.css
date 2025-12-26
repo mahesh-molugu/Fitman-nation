@@ -76,17 +76,10 @@
   line-height: 1.6;
 }
 
-.event-link {
-  color: var(--brand-red);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: 14px;
-  transition: color 0.3s ease;
-}
-
-.event-link:hover {
-  color: var(--brand-white);
+.event-link-btn {
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .events-cta {

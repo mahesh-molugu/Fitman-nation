@@ -6,6 +6,7 @@ import WhatWeDo from '../components/WhatWeDo.jsx'
 import ProgramsOverview from '../components/ProgramsOverview.jsx'
 import TestimonialsSlider from '../components/TestimonialsSlider.jsx'
 import EventsPreview from '../components/EventsPreview.jsx'
+import WhatsAppCommunity from '../components/WhatsAppCommunity.jsx'
 import LeadCaptureBanner from '../components/LeadCaptureBanner.jsx'
 import './Home.css'
 
@@ -30,14 +31,14 @@ export default function Home() {
       <ProgramsOverview />
       <TestimonialsSlider />
       <EventsPreview />
+      <WhatsAppCommunity />
       
       <section className="cta-banner">
         <div className="container">
-          <h2>Ready to Transform Your Life?</h2>
-          <p>Join thousands of members who are achieving their fitness goals with personalized mentorship</p>
+          <h2>Get a Free Consultation</h2>
+          <p>Not sure where to start? Speak with our coaches and get a personalized fitness direction based on your goals, body type, and lifestyle.</p>
           <div className="cta-buttons">
-            <Link to="/contact" className="btn btn-red">Get Free Consultation</Link>
-            <Link to="/programs" className="btn btn-outline">View Programs</Link>
+            <Link to="/contact" className="btn btn-red">👉 Get Free Consultation</Link>
           </div>
         </div>
       </section>

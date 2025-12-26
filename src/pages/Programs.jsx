@@ -30,7 +30,7 @@ export default function Programs() {
         'Increased energy levels',
         'Confidence in your fitness journey'
       ],
-      cta: 'Enroll Now'
+      cta: '👉 Enroll Now'
     },
     {
       id: 'pro',
@@ -59,7 +59,7 @@ export default function Programs() {
         'Better nutrition habits',
         'Achievement of specific fitness goals'
       ],
-      cta: 'Enroll Now'
+      cta: '👉 Enroll Now'
     },
     {
       id: 'premium',
@@ -89,7 +89,7 @@ export default function Programs() {
         'Complete lifestyle transformation',
         'Long-term sustainable habits'
       ],
-      cta: 'Enroll Now'
+      cta: '👉 Enroll Now'
     },
     {
       id: 'special',
