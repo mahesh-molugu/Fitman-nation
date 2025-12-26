@@ -100,22 +100,66 @@ export default function About() {
           </p>
           <div className="team-grid">
             <div className="team-card">
-              <div className="team-avatar">👨‍💼</div>
+              <div className="team-image-wrapper">
+                <img 
+                  src="/images/mentors/expert-mentor.jpg" 
+                  alt="Expert Mentor" 
+                  className="team-image"
+                  onError={(e) => {
+                    e.target.style.display = 'none'
+                    e.target.nextElementSibling.style.display = 'block'
+                  }}
+                />
+                <div className="team-avatar" style={{display: 'none'}}>👨‍💼</div>
+              </div>
               <h3>Expert Mentors</h3>
               <p>Certified trainers with years of experience in fitness, nutrition, and adaptive training.</p>
             </div>
             <div className="team-card">
-              <div className="team-avatar">👩‍⚕️</div>
+              <div className="team-image-wrapper">
+                <img 
+                  src="/images/mentors/nutrition-specialist.jpg" 
+                  alt="Nutrition Specialist" 
+                  className="team-image"
+                  onError={(e) => {
+                    e.target.style.display = 'none'
+                    e.target.nextElementSibling.style.display = 'block'
+                  }}
+                />
+                <div className="team-avatar" style={{display: 'none'}}>👩‍⚕️</div>
+              </div>
               <h3>Nutrition Specialists</h3>
               <p>Registered dietitians who create meal plans tailored to your goals and preferences.</p>
             </div>
             <div className="team-card">
-              <div className="team-avatar">🏋️</div>
+              <div className="team-image-wrapper">
+                <img 
+                  src="/images/mentors/strength-coach.jpg" 
+                  alt="Strength Coach" 
+                  className="team-image"
+                  onError={(e) => {
+                    e.target.style.display = 'none'
+                    e.target.nextElementSibling.style.display = 'block'
+                  }}
+                />
+                <div className="team-avatar" style={{display: 'none'}}>🏋️</div>
+              </div>
               <h3>Strength Coaches</h3>
               <p>Specialists in strength training, mobility, and injury prevention.</p>
             </div>
             <div className="team-card">
-              <div className="team-avatar">🧘</div>
+              <div className="team-image-wrapper">
+                <img 
+                  src="/images/mentors/wellness-guide.jpg" 
+                  alt="Wellness Guide" 
+                  className="team-image"
+                  onError={(e) => {
+                    e.target.style.display = 'none'
+                    e.target.nextElementSibling.style.display = 'block'
+                  }}
+                />
+                <div className="team-avatar" style={{display: 'none'}}>🧘</div>
+              </div>
               <h3>Wellness Guides</h3>
               <p>Yoga and mindfulness instructors for holistic health and recovery.</p>
             </div>
@@ -125,5 +169,6 @@ export default function About() {
     </div>
   )
 }
+
 
 

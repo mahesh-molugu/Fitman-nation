@@ -1,5 +1,25 @@
 .events-preview {
   background-color: var(--gray-dark);
+  background-image: url('/images/backgrounds/events-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.events-preview::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 26, 26, 0.8);
+  z-index: 0;
+}
+
+.events-preview .container {
+  position: relative;
+  z-index: 1;
 }
 
 .events-grid {
@@ -79,5 +99,6 @@
     grid-template-columns: 1fr;
   }
 }
+
 
 

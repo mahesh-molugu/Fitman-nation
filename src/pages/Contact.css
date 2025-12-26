@@ -4,12 +4,53 @@
 
 .contact-hero {
   background: linear-gradient(135deg, var(--brand-black), var(--gray-dark));
+  background-image: url('/images/backgrounds/contact-hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
   text-align: center;
   padding-top: 120px;
+  position: relative;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.8));
+  z-index: 0;
+}
+
+.contact-hero .container {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-content {
   background-color: var(--brand-black);
+  background-image: url('/images/backgrounds/contact-content-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 0;
+}
+
+.contact-content .container {
+  position: relative;
+  z-index: 1;
 }
 
 .contact-grid {
@@ -271,5 +312,6 @@
     font-size: 2rem;
   }
 }
+
 
 

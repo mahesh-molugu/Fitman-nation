@@ -1,5 +1,25 @@
 .testimonials-slider {
   background-color: var(--brand-black);
+  background-image: url('/images/backgrounds/testimonials-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.testimonials-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.testimonials-slider .container {
+  position: relative;
+  z-index: 1;
 }
 
 .testimonials-container {
@@ -87,5 +107,6 @@
     font-size: 1rem;
   }
 }
+
 
 

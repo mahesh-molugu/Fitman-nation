@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero.jsx'
+import HeroVideo from '../components/HeroVideo.jsx'
 import WhatWeDo from '../components/WhatWeDo.jsx'
 import ProgramsOverview from '../components/ProgramsOverview.jsx'
 import TestimonialsSlider from '../components/TestimonialsSlider.jsx'
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <div className="home-page">
       <Hero />
+      <HeroVideo />
       <WhatWeDo />
       <ProgramsOverview />
       <TestimonialsSlider />
@@ -49,5 +51,6 @@ export default function Home() {
     </div>
   )
 }
+
 
 

@@ -5,6 +5,14 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-bg" aria-hidden="true">
+        <img 
+          src="/images/hero-background.jpg" 
+          alt="" 
+          className="hero-bg-image"
+          onError={(e) => {
+            e.target.style.display = 'none'
+          }}
+        />
         <div className="hero-bg-overlay"></div>
       </div>
 

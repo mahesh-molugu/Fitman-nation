@@ -1,5 +1,26 @@
 .what-we-do {
   background-color: var(--brand-black);
+  background-image: url('/images/backgrounds/what-we-do-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.what-we-do::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 0;
+}
+
+.what-we-do .container {
+  position: relative;
+  z-index: 1;
 }
 
 .services-grid {
@@ -78,5 +99,6 @@
     padding: 30px 20px;
   }
 }
+
 
 
