@@ -1,6 +1,8 @@
 .what-we-do {
   background-color: var(--brand-black);
-  background-image: url('/images/backgrounds/what-we-do-bg.jpg');
+  background-image: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%),
+    url('/images/backgrounds/what-we-do-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

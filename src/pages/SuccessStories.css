@@ -3,8 +3,9 @@
 }
 
 .stories-hero {
-  background: linear-gradient(135deg, var(--brand-black), var(--gray-dark));
-  background-image: url('/images/backgrounds/success-stories-hero-bg.jpg');
+  background: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%),
+    url('/images/backgrounds/success-stories-hero-bg.jpg');
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -31,7 +32,9 @@
 
 .stories-showcase {
   background-color: var(--brand-black);
-  background-image: url('/images/backgrounds/success-stories-bg.jpg');
+  background-image: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%),
+    url('/images/backgrounds/success-stories-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
