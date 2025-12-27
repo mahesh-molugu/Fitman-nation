@@ -1,10 +1,23 @@
 import { Link } from 'react-router-dom'
 import './Hero.css'
+import heroMp4 from '../assets/hero.mp4'
 
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-bg" aria-hidden="true">
+        <video 
+          className="hero-bg-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+          poster="/images/hero-video-poster.jpg"
+        >
+          <source src={heroMp4} type="video/mp4" />
+          {/* Fallback to image if video doesn't load */}
+        </video>
         <img 
           src="/images/hero-background.jpg" 
           alt="" 
