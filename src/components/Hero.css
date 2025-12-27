@@ -38,6 +38,31 @@
   filter: grayscale(30%) brightness(0.6);
 }
 
+.hero-play-button {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand-white);
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+  transition: opacity 150ms ease;
+}
+
+.hero-play-button.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .hero-bg-overlay {
   position: absolute;
   top: 0;

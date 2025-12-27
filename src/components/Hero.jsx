@@ -1,23 +1,85 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Hero.css'
 import heroMp4 from '../assets/hero.mp4'
 
 export default function Hero() {
   const videoRef = useRef(null)
+  const [isPlaying, setIsPlaying] = useState(true)
+  const playAttempts = useRef(0)
 
   useEffect(() => {
     const v = videoRef.current
-    if (v) {
-      // try to play the video programmatically to improve autoplay behaviour on some mobile browsers
-      const playPromise = v.play()
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // autoplay failed; poster will be visible as fallback
+
+    function tryPlay() {
+      if (!v) return
+      const p = v.play()
+      if (p !== undefined) {
+        p.then(() => {
+          setIsPlaying(!v.paused)
+        }).catch(() => {
+          // autoplay blocked by browser; user interaction may be required
+          setIsPlaying(false)
         })
       }
     }
+
+    // initial attempt
+    tryPlay()
+
+    function onPause() {
+      setIsPlaying(false)
+      // try to resume a few times with backoff
+      if (playAttempts.current < 3) {
+        playAttempts.current += 1
+        setTimeout(tryPlay, 400 * playAttempts.current)
+      }
+    }
+
+    function onPlay() {
+      setIsPlaying(true)
+    }
+
+    function onVisibilityChange() {
+      if (document.visibilityState === 'visible') tryPlay()
+    }
+
+    function onUserInteraction() {
+      tryPlay()
+      // once user interacts, we can remove the listeners
+      document.removeEventListener('touchstart', onUserInteraction)
+      document.removeEventListener('click', onUserInteraction)
+    }
+
+    if (v) {
+      v.addEventListener('pause', onPause)
+      v.addEventListener('play', onPlay)
+    }
+    document.addEventListener('visibilitychange', onVisibilityChange)
+    document.addEventListener('touchstart', onUserInteraction, { passive: true })
+    document.addEventListener('click', onUserInteraction, { passive: true })
+
+    return () => {
+      if (v) {
+        v.removeEventListener('pause', onPause)
+        v.removeEventListener('play', onPlay)
+      }
+      document.removeEventListener('visibilitychange', onVisibilityChange)
+      document.removeEventListener('touchstart', onUserInteraction)
+      document.removeEventListener('click', onUserInteraction)
+    }
   }, [])
+
+  const togglePlay = () => {
+    const v = videoRef.current
+    if (!v) return
+
+    if (v.paused) {
+      v.play().catch(() => {})
+    } else {
+      v.pause()
+    }
+  }
 
   return (
     <section className="hero">
@@ -29,6 +91,7 @@ export default function Hero() {
           muted
           loop
           playsInline
+          preload="auto"
           aria-hidden="true"
           poster="/images/hero-video-poster.jpg"
         >
@@ -44,6 +107,13 @@ export default function Hero() {
           }}
         />
         <div className="hero-bg-overlay"></div>
+        <button
+          className={`hero-play-button ${isPlaying ? 'hidden' : ''}`}
+          aria-label={isPlaying ? 'Pause background video' : 'Play background video'}
+          onClick={togglePlay}
+        >
+          {isPlaying ? '❚❚' : '▶'}
+        </button>
       </div>
 
       <div className="hero-inner">
