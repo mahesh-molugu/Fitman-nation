@@ -127,8 +127,17 @@
     width: 100%;
   }
 
-  /* Disable background video on small devices to save bandwidth */
+  /* Show background video on small devices (mobile-first) */
   .hero-bg-video {
-    display: none;
+    display: block;
+    filter: none;
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+    object-position: center 30%;
+  }
+
+  /* Prevent hero becoming excessively tall on small screens */
+  .hero {
+    min-height: 65vh;
   }
 }

@@ -1,12 +1,29 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import './Hero.css'
 import heroMp4 from '../assets/hero.mp4'
 
 export default function Hero() {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const v = videoRef.current
+    if (v) {
+      // try to play the video programmatically to improve autoplay behaviour on some mobile browsers
+      const playPromise = v.play()
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // autoplay failed; poster will be visible as fallback
+        })
+      }
+    }
+  }, [])
+
   return (
     <section className="hero">
       <div className="hero-bg" aria-hidden="true">
         <video 
+          ref={videoRef}
           className="hero-bg-video"
           autoPlay
           muted
