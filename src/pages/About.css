@@ -1,0 +1,250 @@
+.about-page {
+  width: 100%;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, var(--brand-black), var(--gray-dark));
+  text-align: center;
+  padding-top: 120px;
+}
+
+.page-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--brand-white);
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+  color: var(--gray-light);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.brand-story {
+  background-color: var(--brand-black);
+  background-image: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%),
+    url('/images/backgrounds/about-story-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.brand-story::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.brand-story .container {
+  position: relative;
+  z-index: 1;
+}
+
+.story-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.story-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--brand-white);
+  margin-bottom: 25px;
+}
+
+.mission-vision {
+  background-color: var(--gray-dark);
+  background-image: 
+    linear-gradient(135deg, rgba(26, 26, 26, 0.95) 0%, rgba(51, 51, 51, 0.95) 100%),
+    url('/images/backgrounds/mission-vision-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.mission-vision::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(26, 26, 26, 0.8);
+  z-index: 0;
+}
+
+.mission-vision .container {
+  position: relative;
+  z-index: 1;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.mv-card {
+  background-color: var(--brand-black);
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mv-card h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--brand-red);
+  margin-bottom: 20px;
+}
+
+.mv-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--brand-white);
+}
+
+.why-fitman {
+  background-color: var(--brand-black);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.why-card {
+  background: linear-gradient(135deg, var(--gray-dark), var(--gray-medium));
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-red);
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.2);
+}
+
+.why-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.why-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--brand-white);
+}
+
+.why-card p {
+  color: var(--gray-light);
+  line-height: 1.6;
+}
+
+.team {
+  background-color: var(--gray-dark);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.team-card {
+  background-color: var(--brand-black);
+  padding: 40px 30px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--brand-red);
+}
+
+.team-image-wrapper {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--brand-red);
+  position: relative;
+  background: var(--gray-dark);
+}
+
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%) contrast(1.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-image {
+  transform: scale(1.1);
+}
+
+.team-avatar {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.team-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--brand-red);
+}
+
+.team-card p {
+  color: var(--gray-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

@@ -1,0 +1,114 @@
+.testimonials-slider {
+  background-color: var(--brand-black);
+  background-image: 
+    linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%),
+    url('/images/backgrounds/testimonials-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.testimonials-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.testimonials-slider .container {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonials-container {
+  max-width: 800px;
+  margin: 60px auto 0;
+}
+
+.testimonial-card {
+  background: linear-gradient(135deg, var(--gray-dark), var(--gray-medium));
+  padding: 50px 40px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stars {
+  color: var(--brand-red);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--brand-white);
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.testimonial-author strong {
+  font-size: 1.1rem;
+  color: var(--brand-white);
+}
+
+.testimonial-author span {
+  color: var(--gray-light);
+  font-size: 0.9rem;
+}
+
+.testimonials-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--gray-light);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
+}
+
+.testimonials-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 40px 30px;
+    min-height: 250px;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}
+
+
+

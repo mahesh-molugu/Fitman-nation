@@ -1,0 +1,130 @@
+.how-it-works-page {
+  width: 100%;
+}
+
+.how-hero {
+  background: linear-gradient(135deg, var(--brand-black), var(--gray-dark));
+  text-align: center;
+  padding-top: 120px;
+}
+
+.steps-section {
+  background-color: var(--brand-black);
+}
+
+.steps-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.step-card {
+  background: linear-gradient(135deg, var(--gray-dark), var(--gray-medium));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  border-color: var(--brand-red);
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.2);
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--brand-red);
+  opacity: 0.2;
+  line-height: 1;
+}
+
+.step-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.step-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand-white);
+  margin-bottom: 15px;
+}
+
+.step-card p {
+  color: var(--gray-light);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.step-connector {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(180deg, var(--brand-red), transparent);
+  transform: translateX(-50%);
+}
+
+.process-cta {
+  background: linear-gradient(135deg, var(--brand-red), #B71C1C);
+  text-align: center;
+}
+
+.process-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--brand-white);
+}
+
+.process-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .step-card {
+    padding: 30px 20px;
+  }
+
+  .step-number {
+    font-size: 3rem;
+    left: 20px;
+  }
+
+  .step-connector {
+    display: none;
+  }
+
+  .process-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+

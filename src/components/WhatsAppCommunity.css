@@ -1,0 +1,65 @@
+.whatsapp-community {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  text-align: center;
+  color: var(--brand-white);
+}
+
+.whatsapp-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.whatsapp-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.whatsapp-community h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--brand-white);
+}
+
+.whatsapp-community p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.6;
+}
+
+.whatsapp-btn {
+  background-color: var(--brand-white);
+  color: #25D366;
+  font-size: 1.1rem;
+  padding: 16px 40px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .whatsapp-community h2 {
+    font-size: 2rem;
+  }
+
+  .whatsapp-community p {
+    font-size: 1rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 3rem;
+  }
+}
+
+
+
+
+
+
+
